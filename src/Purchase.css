@@ -1,0 +1,107 @@
+body {
+    display: flex;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Sidebar styles */
+.navbar {
+    width: 250px;
+    height: 100vh;
+    background-color: #343a40;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+}.navbar-nav Li{
+ color: #ccc;
+}.nav-icon {
+    margin-right: 10px;
+    font-size: 1.2rem; /* Adjust icon size if needed */
+}
+
+.navbar-brand {
+    color: white;
+    font-weight: bold;
+    margin-left: 20px;
+    padding-top: 15px;
+    display: block;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    text-decoration: none;
+    margin: 5px 0;
+    transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #495057;
+    cursor: pointer;
+}
+
+/* Content styles */
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    width: calc(100% - 250px);
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+.main-content h1 {
+    margin-bottom: 20px;
+}
+
+/* Form styles */
+.form-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.btn-primary {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .navbar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+    }
+}
